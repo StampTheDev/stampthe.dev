@@ -1,8 +1,11 @@
 .navigation-bar {
+  flex-shrink: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+
+  padding: 10px 40px;
   border-bottom: 1px solid #333;
 }
 
@@ -123,5 +126,96 @@
 
   to {
     opacity: 1;
+  }
+}
+
+.terminal-page {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px;
+  background: #e8e8e8;
+}
+
+.terminal-window {
+  width: 900px;
+  max-width: 100%;
+
+  height: 515px;
+  max-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #111;
+  color: #eee;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  font-family: monospace;
+}
+
+.terminal-output {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  overflow: hidden;
+  padding: 24px 24px 4px;
+  white-space: pre-wrap;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 4px 24px 20px;
+}
+
+.terminal-input input {
+  flex: 1;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: inherit;
+  font: inherit;
+}
+
+.flying-image {
+  position: absolute;
+
+  left: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  pointer-events: none;
+
+  z-index: 5;
+
+  animation-name: fly-across;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fly-across {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100vw - 400px));
   }
 }
