@@ -46,17 +46,17 @@ function Home() {
 
         <div className="homepage-project-cards">
           <div className="homepage-project-card">
-            <img src="/project1.png" alt="Project 1" />
-            <p>Project 1</p>
+            <img src="/campusbuzz.png" alt="Project 1" />
+            <p>CampusBuzz</p>
           </div>
 
           <div className="homepage-project-card">
-            <img src="/project2.png" alt="Project 2" />
+            <img src="/red.png" alt="Project 2" />
             <p>Project 2</p>
           </div>
 
           <div className="homepage-project-card">
-            <img src="/project3.png" alt="Project 3" />
+            <img src="/blue.png" alt="Project 3" />
             <p>Project 3</p>
           </div>
         </div>

@@ -1,14 +1,19 @@
 export default function handler(req, res) {
-    
+
   if (req.method !== "POST") {
     return res.status(405).json({
       error: "Method not allowed"
     });
   }
 
-  const secretCommands = JSON.parse(
-    process.env.SECRET_COMMANDS_JSON
-  );
+  let secretCommands;
+  try {
+    secretCommands = JSON.parse(process.env.SECRET_JSON);
+  }
+  catch (error) {
+    console.error("Failed to load secret commands:", error);
+    return res.status(500).json({error: "Failed to load secret commands"});
+  }
 
   const command = req.body.command;
 
