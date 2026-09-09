@@ -3,7 +3,7 @@ function Home() {
     <div className="page">
       <img
         className="homepage-image"
-        src="/private/AIgen.png"
+        src="/AIgen.png"
         alt="Homepage"
       />
 
@@ -36,7 +36,7 @@ function Home() {
 
         <img
           className="homepage-about-photo"
-          src="/private/myphoto.png"
+          src="/myphoto.png"
           alt="Jacob Stamper"
         />
       </section>
@@ -46,17 +46,17 @@ function Home() {
 
         <div className="homepage-project-cards">
           <div className="homepage-project-card">
-            <img src="/private/project1.png" alt="Project 1" />
+            <img src="/project1.png" alt="Project 1" />
             <p>Project 1</p>
           </div>
 
           <div className="homepage-project-card">
-            <img src="/private/project2.png" alt="Project 2" />
+            <img src="/project2.png" alt="Project 2" />
             <p>Project 2</p>
           </div>
 
           <div className="homepage-project-card">
-            <img src="/private/project3.png" alt="Project 3" />
+            <img src="/project3.png" alt="Project 3" />
             <p>Project 3</p>
           </div>
         </div>

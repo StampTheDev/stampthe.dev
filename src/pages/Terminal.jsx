@@ -2,8 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 /* I had more than a little fun with this directory, turning it into a little game.
    I may make this more serious for the final project, definitely more polished.
-   Still, I think this is a fun prototype.
-*/
+   Still, I think this is a fun prototype. */
 
 // A single file system object representing files in the directory
 const fileSystem = {
@@ -68,19 +67,19 @@ const fileSystem = {
         "photo1.jpg": {
           type: "image",
           data: "first photo",
-          src: "/private/Screenshot (26).png"
+          src: "/Screenshot (26).png"
         },
 
         "photo2.jpg": {
           type: "image",
           data: "second photo",
-          src: "/private/Screenshot (33).png"
+          src: "/Screenshot (33).png"
         },
 
         "photo3.jpg": {
           type: "image",
           data: "third photo",
-          src: "/private/Screenshot (54).png"
+          src: "/Screenshot (54).png"
         }
       }
     },
@@ -234,7 +233,7 @@ function Terminal() {
         return ["mv: Command \"mv\" is not authorized"];
       default:
         // If no command matched, check backend for secret command
-        const message = await fetch("http://localhost:3001/api/terminal", {
+        const message = await fetch("/api/terminal", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
