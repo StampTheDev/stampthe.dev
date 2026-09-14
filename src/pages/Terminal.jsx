@@ -14,7 +14,12 @@ const fileSystem = {
       catalog: {
         "bio.txt": {
           type: "file",
-          data: ["About me"]
+          data: ["My name is Jacob Stamper", 
+                 "I'm a Computer Science student at Purdue University, graduating in December 2026",
+                 "My specialization is software engineering, especially web development",
+                 "I enjoy building practical software and occasional fun side projects",
+                 "You'll find me working on my projects, catching sun, listening to tunes, and always moving",
+                 "If you find the next big thing, count me in"]
         }
       }
     },
@@ -44,21 +49,28 @@ const fileSystem = {
       }
     },
 
-    ".README.txt": {
+    "README.txt": {
       type: "file",
-      data: ["If you've found this, you're either pretty persistent, or you know a thing or two about commands.",
-             "Thanks for taking the time to explore. There's a hidden directory nearby. It might be worth your time.",
-             "Keep an eye out for uppercase letters..."]
+      data: ["Thanks for taking the time to explore. It means a lot."]
     },
 
     "contact.txt": {
       type: "file",
-      data: ["Contact information"]
+      data: ["Contact information:",
+             "Email: stampthedev@gmail.com",
+             "Address: Francisco, IN",
+             "LinkedIn: stampthedev",
+             "GitHub: stampthedev",
+             "",
+             "Inquire with me for more info"
+      ]
     },
 
     "skills.txt": {
       type: "file",
-      data: ["My skillset"]
+      data: ["Languages: C, C++, Java, JavaScript, Python, SQL",
+              "Technologies & Tools: React, Supabase, PostgreSQL, Raspberry Pi, Git/GitHub, Linux",
+              "Concepts: Scrum, Object-Oriented Programming, Full-Stack Development"]
     },
 
     gallery: {
@@ -80,6 +92,18 @@ const fileSystem = {
           type: "image",
           data: "third photo",
           src: "/Screenshot (54).png"
+        },
+
+        "campusbuzz.png": {
+          type: "image",
+          data: "second photo",
+          src: "/campusbuzz.png"
+        },
+
+        "myvinyl.png": {
+          type: "image",
+          data: "second photo",
+          src: "/myvinyl.jpg"
         }
       }
     },
@@ -89,7 +113,7 @@ const fileSystem = {
       catalog: {
         "hidden.txt": {
           type: "file",
-          data: ["In all lowercase, what is the first thing a software developer ever does?"]
+          data: ["type 'hello world' into this terminal"]
         }
       }
     }
