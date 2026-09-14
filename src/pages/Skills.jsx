@@ -1,8 +1,11 @@
 function Skills() {
-  return
-  <div className="page">
-    <h1>Skills</h1>
-  </div>
+  return (
+    <main className="coming-soon">
+
+      <h1>This page isn't quite ready yet.</h1>
+
+    </main>
+  );
 }
 
 export default Skills

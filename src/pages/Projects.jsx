@@ -1,8 +1,11 @@
 function Projects() {
-  return
-  <div className="page">
-    <h1>Projects</h1>
-  </div>
+  return (
+    <main className="coming-soon">
+
+      <h1>This page isn't quite ready yet.</h1>
+
+    </main>
+  );
 }
 
 export default Projects
