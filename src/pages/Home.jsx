@@ -1,4 +1,9 @@
+import useDaysUntilGraduation from "../hooks/daysUntilGraduation";
+
 function Home() {
+
+const daysUntilGraduation = useDaysUntilGraduation();
+
   return (
     <div className="page">
       <div className="homepage-image-container">
@@ -55,7 +60,7 @@ function Home() {
             </div>
 
             <div>
-              <strong>97</strong>
+              <strong>{daysUntilGraduation}</strong>
               <span>Days Until Available Full-Time</span>
             </div>
           </div>
